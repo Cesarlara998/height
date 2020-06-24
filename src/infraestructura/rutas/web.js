@@ -1,7 +1,8 @@
 const web = require('express').Router()
 
 web.get('/', function (req, res) {
-  res.send('Hello World!');
+  (require('../controladores/Usuarios').
+  	Usuarios(req,res))
 });
 
 
