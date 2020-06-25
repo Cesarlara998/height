@@ -4,10 +4,11 @@ module.exports = (sequelize, DataTypes) => {
     nick: DataTypes.STRING,
     password: DataTypes.STRING,
     email: DataTypes.STRING,
-    estado: DataTypes.BOOLEAN
+    estado: DataTypes.BOOLEAN,
+    idPerfil: DataTypes.INTEGER
   }, {});
   usuario.associate = function(models) {
-    // associations can be defined here
+    usuario.belongsTo(models.perfil,{foreignKey: {name: 'asd' }, as: 'perfil'})
   };
   return usuario;
 };

@@ -1,4 +1,6 @@
+const usuario = require('../../aplicacion/usuarios/listausuarios')
 function Usuarios(req,res) {
- 	res.render('home');
+ 	res.send(usuario)
+ 	//res.render('home');
 }
 module.exports = {Usuarios}

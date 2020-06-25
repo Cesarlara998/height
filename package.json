@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "dev": "nodemon app.js",
-    "test": "jest"
+    "test": "jest",
+    "tests:watch": "jest --watch",
+    "tests:coverage": "jest --coverage"
   },
     "jest": {
     "verbose": true,

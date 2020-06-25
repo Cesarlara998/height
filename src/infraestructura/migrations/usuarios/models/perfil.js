@@ -5,6 +5,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   perfil.associate = function(models) {
     // associations can be defined here
+    perfil.hasMany(models.usuario, {as: 'usuario'})
   };
   return perfil;
 };

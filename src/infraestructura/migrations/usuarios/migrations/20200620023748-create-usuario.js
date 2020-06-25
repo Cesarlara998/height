@@ -22,16 +22,6 @@ module.exports = {
       },
       estado: {
         type: Sequelize.BOOLEAN
-      },perfilId: {
-        type: Sequelize.INTEGER,
-        references: {
-          model: {
-            tableName: 'perfil',
-            schema: 'schema'
-          },
-          key: 'id'
-        },
-        allowNull: false
       },
       createdAt: {
         allowNull: false,
